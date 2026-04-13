@@ -1,0 +1,48 @@
+{
+  "about": {
+    "name": "Vahini Krishnamoorthy",
+    "description": "I am passionate about technology, machine learning, and web development. I enjoy building solutions that combine creativity and innovation.",
+    "image": "images/profile.jpg"
+  },
+  "projects": [
+    {
+      "title": "Bakebloom Website",
+      "description": "A responsive bakery website showcasing products and orders."
+    },
+    {
+      "title": "Rainfall Prediction - Machine Learning",
+      "description": "A predictive model using ML algorithms to forecast rainfall."
+    }
+  ],
+  "internships": [
+    {
+      "company": "Edvedha",
+      "role": "Intern - Machine Learning with Python",
+      "description": "Worked on real-world projects using Python and ML concepts."
+    }
+  ],
+  "workshops": [
+    {
+      "title": "Data Analytics Workshop",
+      "description": "Hands-on workshop covering tools and techniques in data analytics."
+    }
+  ],
+  "skills": ["Python", "Machine Learning", "Java", "HTML", "CSS", "JavaScript", "SQL", "Data Analytics"],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science",
+      "institution": "Your College Name",
+      "year": "2021 - 2025"
+    },
+    {
+      "degree": "Higher Secondary",
+      "institution": "Your School Name",
+      "year": "2019 - 2021"
+    }
+  ],
+  "contact": {
+    "email": "youremail@example.com",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourgithub"
+  }
+}

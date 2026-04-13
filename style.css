@@ -1,0 +1,173 @@
+/* Global Dynamic Background */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  color: #f8f9fa;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Animated Gradient Keyframes */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+nav {
+  background: rgba(17, 24, 39, 0.9) !important; /* Semi-transparent */
+  backdrop-filter: blur(10px);
+}
+nav .nav-link {
+  color: #f8f9fa !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav .nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+}
+h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #38bdf8;
+}
+
+/* Cards */
+.card {
+  background: rgba(31, 41, 55, 0.85);
+  border: none;
+  color: #f8f9fa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Lists (Skills, Certifications, Education) */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  background: rgba(17, 24, 39, 0.8);
+  margin: 10px auto;
+  padding: 12px 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+ul li:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+#contact form {
+  background: rgba(31, 41, 55, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+#contact input, #contact textarea {
+  background: rgba(17, 24, 39, 0.85);
+  border: none;
+  color: #f8f9fa;
+}
+#contact input::placeholder, #contact textarea::placeholder {
+  color: #9ca3af;
+}
+#contact button {
+  background-color: #2563eb;
+  border: none;
+}
+#contact button:hover {
+  background-color: #1e40af;
+}
+
+/* Footer */
+footer {
+  background: rgba(13, 17, 23, 0.9);
+  color: #f8f9fa;
+  text-align: center;
+  padding: 15px 0;
+}
+/* Education Timeline */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 700px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #fca311;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+}
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 50%; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #fca311;
+  border-radius: 50%;
+  z-index: 1;
+}
+.timeline-item.left::before { right: -10px; }
+.timeline-item.right::before { left: -10px; }
+.timeline-item .content {
+  background: #1e2a47;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+}
+/* Typing Effect */
+.typing {
+  font-size: 1.3rem;
+  color: #e5e5e5;
+  border-right: 2px solid #fca311;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(30, end), blink .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
